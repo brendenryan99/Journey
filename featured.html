@@ -336,7 +336,6 @@
 .blog-post {
   max-width: 900px;
   margin: 30px auto;
-  padding: 25px;
   text-align: left;
   max-height: none; /* allow full content */
 }
@@ -349,16 +348,15 @@
 }
 
 .doc-embed {
-  margin-top: 5px;
-  border-radius: 1px;
-  overflow: hidden;
+   margin-top: 0;          /* remove extra gap */
+  line-height: 0;         /* kills inline spacing */
 }
 
 .doc-embed iframe {
+  display: block;         /* VERY important */
   width: 100%;
-  height: 2000px; /* adjust as needed */
+  height: 2000px;
   border: none;
-  background: #222;
 }
 
 .videos-row {
@@ -615,7 +613,6 @@ footer {
 <div class="doc-embed">
     <iframe src="https://docs.google.com/document/d/e/2PACX-1vThV6YT6EnwDeVkHgJ7YGcf4kK_rh4xnjzzvuO7nbCTszIb7snAEuV8hnl3elJiCKXHf-iPpRFRhg24/pub?embedded=true"></iframe>
   </div>
-  </a>
 </article>
         <p><b>Other featured Stories</b></p>
         <div class="products">
