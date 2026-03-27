@@ -335,7 +335,8 @@
 /* BLOG POST STYLE */
 .blog-post {
   max-width: 900px;
-  margin: 30px auto;
+  padding: 0;           /* remove internal spacing */
+  margin: 0 auto;       /* keep centered */
   text-align: left;
   max-height: none; /* allow full content */
 }
@@ -608,8 +609,7 @@ footer {
     <section class="section" id="products" aria-labelledby="products-title">
       <div class="container">
         <h2 id="products-title">Whats to see in the Scene? <b><i>TITLE OF ARTICLE</i></b></h2>
-        <article class="product-card product-card-featured blog-post" aria-labelledby="p1-title">
-
+        <article class="product-card blog-post" aria-labelledby="p1-title">
 <div class="doc-embed">
     <iframe src="https://docs.google.com/document/d/e/2PACX-1vThV6YT6EnwDeVkHgJ7YGcf4kK_rh4xnjzzvuO7nbCTszIb7snAEuV8hnl3elJiCKXHf-iPpRFRhg24/pub?embedded=true"></iframe>
   </div>
